@@ -18,18 +18,18 @@
 
 ## 🚀 Быстрый старт
 
-### 1. Клонирование и запуск
+### 1. Запуск
 
 ```bash
-git clone https://github.com/your_username/barter.git
-cd barter
 docker-compose up --build -d
 ```
+
 ### 2. Миграции и суперпользователь
 ```bash
 docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 ```
+
 ### 3. Админка
 ```bash
 http://localhost:8000/admin/
